@@ -53,5 +53,5 @@ setup_ssh_agent() {
 [[ "${TMUX+set}" == "set" ]] && ignoreeof=10
 
 # Set PS1 to include information about the git branch.
-. /usr/lib/git-core/git-sh-prompt
-PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
+#. /usr/lib/git-core/git-sh-prompt
+#PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
