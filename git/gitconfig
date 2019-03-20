@@ -1,0 +1,18 @@
+[user]
+	name = Filipe Brandenburger
+	email = filbranden@gmail.com
+[core]
+	abbrev = 12
+	pager = less -+$LESS -FRX
+	excludesfile = ~/.config/git/gitignore_global
+[color]
+	ui = auto
+[push]
+	default = simple
+[alias]
+	lg = log --oneline --no-abbrev --reverse --topo-order --no-merges --full-diff
+	lo = log --decorate --oneline
+	ls = log --decorate --stat -M
+	sho = show --oneline --no-patch
+[merge]
+	conflictstyle = diff3

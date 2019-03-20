@@ -1,0 +1,8 @@
+# vim-plug itself (installed using `curl`):
+/autoload/plug.vim
+
+# Where vim-plug will store plug-ins:
+/plugged/
+
+# netrw's state shouldn't make the repo dirty:
+/.netrwhist
