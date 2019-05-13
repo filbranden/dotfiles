@@ -56,3 +56,6 @@ grep -q bashrc_snippet ~/.bashrc 2>/dev/null || {
         echo ". ${snippet_relpath}"
     } >>~/.bashrc
 }
+
+# Sort order, case sensitive, include dotfiles first.
+symlink "${topdir}/bash/i18n" ~/.i18n
