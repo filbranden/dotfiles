@@ -4,7 +4,7 @@ if (&term ==# "xterm" || &term ==# "screen") && !empty($COLORTERM)
   let &t_Co = 256
 endif
 
-let g:airline_powerline_fonts = 1
+"let g:airline_powerline_fonts = 1
 
 " Set up vim-plug
 call plug#begin()
@@ -15,7 +15,8 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'sgur/vim-editorconfig'
-Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline'
+Plug 'itchyny/lightline.vim'
 Plug 'lifepillar/vim-colortemplate'
 Plug 'ludovicchabant/vim-gutentags'
 " Color schemes:
