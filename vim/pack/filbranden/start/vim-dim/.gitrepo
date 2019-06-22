@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/jeffkreeftmeijer/vim-dim
+	branch = master
+	commit = 00d1b3beacf22cf061b95261d7afbba461701826
+	parent = b7f9b86153e10af4d8e5798b0996c40db0e5286e
+	method = merge
+	cmdver = 0.4.0
