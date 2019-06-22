@@ -8,7 +8,7 @@ endif
 
 " use my own colorscheme for dark colors
 set background=dark
-"colorscheme subtle_wip
+colorscheme subtle_wip
 
 " don't wrap lines
 set nowrap
