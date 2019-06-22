@@ -53,5 +53,10 @@ setup_ssh_agent() {
 [[ "${TMUX+set}" == "set" ]] && ignoreeof=10
 
 # Set PS1 to include information about the git branch.
-#. /usr/lib/git-core/git-sh-prompt
-#PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
+if [[ -f /usr/share/git-core/contrib/completion/git-prompt.sh ]]; then
+  . /usr/share/git-core/contrib/completion/git-prompt.sh
+  PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
+fi
+
+# Use full-featured vim to edit git commit messages, etc.
+export EDITOR=vim
