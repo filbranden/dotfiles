@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/itchyny/lightline.vim.git
+	branch = master
+	commit = 80c242c3c5394fd5143b5d7e2741989ba04ae46a
+	parent = 77315f7b85a9906a8619b397238e009b13b07630
+	method = merge
+	cmdver = 0.4.0
