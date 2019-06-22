@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/ludovicchabant/vim-gutentags.git
+	branch = master
+	commit = eecb136fae97e30d5f01e71f0d3b775c8b017385
+	parent = 72e0e8b9b68de3137d3242268d21b5eb4ccba0a5
+	method = merge
+	cmdver = 0.4.0
