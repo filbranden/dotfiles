@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/altercation/vim-colors-solarized.git
+	branch = master
+	commit = 528a59f26d12278698bb946f8fb82a63711eec21
+	parent = 13c968beac3ed873d30c20abb5a2968bee0c2399
+	method = merge
+	cmdver = 0.4.0
