@@ -1,0 +1,14 @@
+editorconfig	editorconfig.txt	/*editorconfig*
+editorconfig#load()	editorconfig.txt	/*editorconfig#load()*
+editorconfig-changelog	editorconfig.txt	/*editorconfig-changelog*
+editorconfig-contents	editorconfig.txt	/*editorconfig-contents*
+editorconfig-customizing	editorconfig.txt	/*editorconfig-customizing*
+editorconfig-examples	editorconfig.txt	/*editorconfig-examples*
+editorconfig-functions	editorconfig.txt	/*editorconfig-functions*
+editorconfig-interface	editorconfig.txt	/*editorconfig-interface*
+editorconfig-introduction	editorconfig.txt	/*editorconfig-introduction*
+editorconfig-properties	editorconfig.txt	/*editorconfig-properties*
+editorconfig-usage	editorconfig.txt	/*editorconfig-usage*
+editorconfig.txt	editorconfig.txt	/*editorconfig.txt*
+g:editorconfig_blacklist	editorconfig.txt	/*g:editorconfig_blacklist*
+g:editorconfig_root_chdir	editorconfig.txt	/*g:editorconfig_root_chdir*
