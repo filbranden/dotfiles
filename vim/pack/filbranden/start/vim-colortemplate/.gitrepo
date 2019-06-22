@@ -6,7 +6,7 @@
 [subrepo]
 	remote = https://github.com/lifepillar/vim-colortemplate.git
 	branch = master
-	commit = 3f41c18fd0c6d01eb190015725b56d43c1160046
-	parent = 920a3679cdac06d2a1c7abf273cda07c4f6a5da4
+	commit = 6373f2f3e0fe4818916982c0462fd0c6e7d6e2b1
+	parent = 6e5a17024cfd381700054af819d9e97cb9a6e5f6
 	method = merge
 	cmdver = 0.4.0
