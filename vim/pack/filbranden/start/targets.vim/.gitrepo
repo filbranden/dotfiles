@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/wellle/targets.vim
+	branch = master
+	commit = a79447f261e4b8b4327557aa03726f3849334b84
+	parent = 6eb500bf3ece243ece575ce41d875c0fe8b5fb98
+	method = merge
+	cmdver = 0.4.0
