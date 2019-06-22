@@ -6,28 +6,9 @@ endif
 
 "let g:airline_powerline_fonts = 1
 
-" Set up vim-plug
-call plug#begin()
-
-Plug 'junegunn/vim-plug'
-Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-fugitive'
-Plug 'sgur/vim-editorconfig'
-"Plug 'vim-airline/vim-airline'
-Plug 'itchyny/lightline.vim'
-Plug 'lifepillar/vim-colortemplate'
-Plug 'ludovicchabant/vim-gutentags'
-" Color schemes:
-Plug 'altercation/vim-colors-solarized'
-Plug 'filbranden/vim-colorscheme'
-
-call plug#end()
-
 " use my own colorscheme for dark colors
 set background=dark
-colorscheme subtle_wip
+"colorscheme subtle_wip
 
 " don't wrap lines
 set nowrap
