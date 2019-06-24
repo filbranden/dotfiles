@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/tpope/vim-surround.git
+	branch = master
+	commit = ca58a2d886cc18734c90c9665da4775d444b0c04
+	parent = 4e51877f4f214e574f92db230cb7b4daaedef5b5
+	method = merge
+	cmdver = 0.4.0
