@@ -1,0 +1,42 @@
+
+# Also include status of last run command
+_pipestatus_prompt_update () {
+  declare -a pipestatus=("${PIPESTATUS[@]}")
+  declare histcmd=$(fc -l -1)
+  if [[ "$histcmd" == "${_pipestatus_prompt_save_histcmd:-}" ]] ; then
+    if [[ -v _pipestatus_prompt_save_ps1 ]] ; then
+      PS1=$_pipestatus_prompt_save_ps1
+    fi
+    return
+  fi
+  _pipestatus_prompt_save_histcmd=$histcmd
+  declare -a stat
+  declare rc
+  declare interesting
+  declare signal
+  for rc in "${pipestatus[@]}" ; do
+    if (( rc > 0 )) ; then
+      interesting=1
+      if (( rc > 128 )) ; then
+        if signal=$(kill -l "$rc") 2>/dev/null ; then
+          rc="\[\e[91;1m\]${rc}|${signal}\[\e[0m\]"
+        fi
+      else
+        rc="\[\e[31m\]${rc}\[\e[0m\]"
+      fi
+    fi
+    stat+=("$rc")
+  done
+  if [[ -n "$interesting" ]] ; then
+    if [[ ! -v _pipestatus_prompt_save_ps1 ]] ; then
+      _pipestatus_prompt_save_ps1=$PS1
+    fi
+    PS1="[${stat[*]}] ${_pipestatus_prompt_save_ps1}"
+  elif [[ -v _pipestatus_prompt_save_ps1 ]] ; then
+    PS1=$_pipestatus_prompt_save_ps1
+    unset _pipestatus_prompt_save_ps1
+  fi
+}
+
+PROMPT_COMMAND=_pipestatus_prompt_update
+PS1='\w\[\e[96m\]$(_scm_prompt)\[\e[0m\] \$ '

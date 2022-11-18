@@ -1,0 +1,36 @@
+#!/bin/bash
+
+pwd=${1:-$PWD}
+if [[ "$pwd" == "$HOME" ]] ; then
+  echo "~"
+  exit
+fi
+
+if [[ "$pwd" == /data/users/"$USER"/* ]] ; then
+  newpwd=$HOME/${pwd#/data/users/*/}
+  realpwd=$(cd "$newpwd" && pwd -P)
+  if [[ "$pwd" == "$realpwd" ]] ; then
+    pwd=$newpwd
+  fi
+fi
+
+case "$pwd" in
+  $HOME/*/*)
+    ;;
+  $HOME/*)
+    echo "~/${pwd##*/}"
+    exit
+    ;;
+esac
+
+case "$pwd" in
+  /*/*)
+    ;;
+  /*)
+    echo "${pwd}"
+    exit
+    ;;
+esac
+
+#echo ".../${pwd##*/}"
+echo "${pwd##*/}"

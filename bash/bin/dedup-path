@@ -1,0 +1,21 @@
+#!/bin/bash
+
+join_by () {
+  local IFS=$1
+  shift
+  echo "$*"
+}
+
+declare -a path result
+declare -A seen
+
+pathstr=${1:-$PATH}
+IFS=: read -ra path <<<$pathstr
+for dir in "${path[@]}" ; do
+  if [[ -z "${seen[$dir]:-}" ]] ; then
+    seen[$dir]=1
+    result+=($dir)
+  fi
+done
+
+join_by : "${result[@]}"
